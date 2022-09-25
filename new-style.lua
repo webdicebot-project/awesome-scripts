@@ -299,33 +299,33 @@ function getBet()
     local _bet
     local profitPersen = profit / allVariable.bigerBalance * 100
     if allVariable.countBet >= 10000 and profitPersen > 20 then
-        print('reset count')
+        log('reset count')
         allVariable.countBet = 0
     elseif allVariable.countBet >= 10000 and profitPersen < 20 then
-        print('reset seed')
+        log('reset seed')
         allVariable.countBet = 0
         resetseed()
         resetBet()
     elseif allVariable.countBet >= 9000 and profitPersen < 90 then
-        print('p7')
+        log('p7')
         _bet = tacticSeven()
     elseif allVariable.countBet >= 7000 and profitPersen < 80 then
-        print('p6')
+        log('p6')
         _bet = tacticSix()
     elseif allVariable.countBet >= 6000 and profitPersen < 60 then
-        print('p5')
+        log('p5')
         _bet = tacticFive()
     elseif allVariable.countBet >= 4000 and profitPersen < 40 then
-        print('p4')
+        log('p4')
         _bet = tacticFour()
     elseif allVariable.countBet >= 2000 and profitPersen < 20 then
-        print('p3')
+        log('p3')
         _bet = tacticThree()
     elseif profitPersen > 5 and profitPersen < 10 then
-        print('p2')
+        log('p2')
         _bet = tacticTwo()
     else
-        print('p1')
+        log('p1')
         _bet = tacticOne()
     end
     if _bet ~= nil then

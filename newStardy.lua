@@ -166,7 +166,7 @@ function getNextBet()
         if onriskbalance == 0 then
             onriskbalance = realBalance
         end
-        print(phantram)
+        log(phantram)
     else
         if realBalance >= onriskbalance then
             onriskbalance = 0

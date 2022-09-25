@@ -192,13 +192,13 @@ function workingBet()
             (normal.tilethang >= 40 and normal.tilethang <= 60) or
             (normal.tilethang >= 80 and normal.tilethang <= 100) or
             (normal.tilethang >= 120)) then
-        print('smart')
+        log('smart')
         chance = normal.change
         bethigh = normal.defaultHi
         nextbet = normal.bet
     else
         local go = getPayoutGo()
-        print('go')
+        log('go')
         chance = go.change
         bethigh = go.defaultHi
         nextbet = go.bet

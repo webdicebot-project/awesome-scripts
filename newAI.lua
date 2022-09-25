@@ -198,7 +198,7 @@ function workingChange()
     local smartChange = getPayoutChange()
     local gochange = getGoChange()
     if smartChange.tilethang >= 30 and smartChange.tilethang <= 60 then
-        print('here smart');
+        log('here smart');
         flagChange = true
         flagNormal = false
         flagGo = false
@@ -218,32 +218,32 @@ function workingChange()
         local py = getPayout(chance)
         bethigh = gochange.defaultHi
         if math.abs(balancelose) < base then
-            print('here go / normal');
+            log('here go / normal');
             nextbet = math.abs(balancelose) / (py - 1)
         elseif (math.abs(balancelose) < resetProfit) then
-            print('here go')
+            log('here go')
             nextbet = math.abs(balancelose) / (py - 1)
         elseif gochange.tilethang >= 65 and gochange.tilethang <= 70 then
-            print('here go / 5');
+            log('here go / 5');
             nextbet = (math.abs(balancelose) / 6) / (py - 1)
         elseif gochange.tilethang >= 45 and gochange.tilethang <= 50 then
-            print('here go / 4');
+            log('here go / 4');
             nextbet = (math.abs(balancelose) / 5) / (py - 1)
         elseif gochange.tilethang >= 25 and gochange.tilethang <= 30 then
-            print('here go / 3');
+            log('here go / 3');
             nextbet = (math.abs(balancelose) / 4) / (py - 1)
         elseif gochange.tilethang >= 5 and gochange.tilethang <= 10 then
-            print('here go / 2');
+            log('here go / 2');
             nextbet = (math.abs(balancelose) / 3) / (py - 1)
         else
-            print('here random')
+            log('here random')
             chance = math.random(10, 30)
             bethigh = math.random(0, 100) % 2 == 0
             nextbet = base
         end
         firstTimePlay = 0
     else
-        print('here normal');
+        log('here normal');
         flagChange = false
         flagNormal = true
         flagGo = false

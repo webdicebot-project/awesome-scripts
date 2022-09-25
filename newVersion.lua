@@ -145,7 +145,7 @@ function getNextBet()
         if onriskbalance == 0 then
             onriskbalance = (balance / 10)
         end
-        print(phantram)
+        log(phantram)
     else
         if (balance / 10) >= onriskbalance then
             onriskbalance = 0
