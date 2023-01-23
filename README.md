@@ -1,3 +1,2 @@
-# Awesome Scripts
-
-- Maker: Truong Trieu Luan - <https://facebook.com/ttluan>
+Maker is Truong Trieu Luan
+facebook.com/ttluan
