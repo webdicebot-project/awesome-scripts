@@ -1,3 +1,5 @@
-Maker is Truong Trieu Luan
+# Awesome scripts
 
-facebook.com/ttluan
+Many cool dice script to try
+
+Thank to Truong Trieu Luan (https://facebook.com/ttluan) has make it ❤
