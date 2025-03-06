@@ -1,5 +1,7 @@
-# Awesome scripts
+# Awesome Scripts
 
 > Many cool dice script to try
 
-Thank to Truong Trieu Luan (https://facebook.com/ttluan) has make it ❤
+❤ Contributors:
+- Truong Trieu Luan (https://facebook.com/ttluan)
+- Pflip97 (https://t.me/pflip97)
